@@ -1,5 +1,5 @@
 STAGING_HOST=staging-docs.lfe.io
-STAGING_PATH=/var/www/lfe/staging-docs/quick-start
+STAGING_PATH=/var/www/lfe/staging-docs/lgtk-tutorial
 
 SRC=./
 BASE_DIR=$(shell pwd)
@@ -9,8 +9,9 @@ STAGE_DIR=$(PROD_DIR)
 STAGE_PATH=$(BASE_DIR)/$(STAGE_DIR)
 
 setup:
-	@npm install gitbook -g
-	@npm install gitbook-plugin-ga -g
+	@npm install -g gitbook-cli
+	@npm install -g gitbook-plugin-ga
+	@gitbook install
 
 build:
 	gitbook build $(SRC) --output=$(PROD_DIR)
@@ -26,3 +27,5 @@ publish: build
 	-git commit -a && git push origin master
 	git subtree push --prefix $(PROD_DIR) origin gh-pages
 
+clean:
+	rm -rf node_modules node*.log
