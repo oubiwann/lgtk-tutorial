@@ -1,4 +1,4 @@
-The ℓ GTK Tutorial is Copyright &copy; 2015-2016 Duncan McGreggor
+The ℓGTK Tutorial is Copyright &copy; 2015-2016 Duncan McGreggor
 
 The PyGTK Tutorial is Copyright &copy; 2001-2005 John Finlay.
 
