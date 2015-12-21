@@ -5,7 +5,7 @@
    * [Copyright Page](fm/copyright-page.md)
    * [Acknowledgments](fm/acknowledgments.md)
 * [Introduction](ch1/README.md)
-   * [lGTK](ch1/exploring.md)  
+   * [ℓGTK](ch1/exploring.md)  
 * [Getting Started](ch2/README.md)
 * [Moving On](ch3/README.md)
 * [Packing Widgets](ch4/README.md)
@@ -37,10 +37,6 @@
 * [Scribble, A Simple Example Drawing Program](ch30/README.md)
 * [Tips For Writing lGTK Applications](ch31/README.md)
 
-
-
-
-New Widgets in PyGTK 2.4
 
 
 
