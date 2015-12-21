@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>About | ℓGTK Tutorial</title>
+        <title>Introduction | ℓGTK Tutorial</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A port of the PyGTK 2.0 tutorial for LFE, built on top of the Erlang GTK 2.0 library, gtknode.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.3.0">
         
         
@@ -15,18 +15,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
-    <link rel="stylesheet" href="gitbook/style.css">
+    <link rel="stylesheet" href="../gitbook/style.css">
     
     
 
         
     
     
-    <link rel="next" href="./fm/title-page.html" />
     
+    <link rel="prev" href="../fm/acknowledgments.html" />
     
 
         
@@ -34,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="0" data-basepath="." data-revision="Sun Dec 20 2015 22:25:33 GMT-0600 (CST)">
+    <div class="book" data-level="1" data-basepath=".." data-revision="Sun Dec 20 2015 22:25:33 GMT-0600 (CST)">
     
 
 <div class="book-summary">
@@ -58,10 +58,10 @@
 
         
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="./index.html">
+                    <a href="../index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -75,7 +75,7 @@
         <li class="chapter " data-level="0.1" data-path="fm/title-page.html">
             
                 
-                    <a href="./fm/title-page.html">
+                    <a href="../fm/title-page.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -90,7 +90,7 @@
         <li class="chapter " data-level="0.2" data-path="fm/copyright-page.html">
             
                 
-                    <a href="./fm/copyright-page.html">
+                    <a href="../fm/copyright-page.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -105,7 +105,7 @@
         <li class="chapter " data-level="0.3" data-path="fm/acknowledgments.html">
             
                 
-                    <a href="./fm/acknowledgments.html">
+                    <a href="../fm/acknowledgments.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -122,10 +122,10 @@
             
         </li>
     
-        <li class="chapter " data-level="1" data-path="ch1/index.html">
+        <li class="chapter active" data-level="1" data-path="ch1/index.html">
             
                 
-                    <a href="./ch1/index.html">
+                    <a href="../ch1/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -476,7 +476,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >ℓGTK Tutorial</a>
+        <a href="../" >ℓGTK Tutorial</a>
     </h1>
 </div>
 
@@ -486,9 +486,52 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="%E2%84%93gtk">&#x2113;GTK</h1>
-<h2 id="about">About</h2>
-<p>This LFE tutorial is a port of the PyGTK 2.0 tutorial. It uses the &#x2113;GTK library which is built upon the Erlang GTK 2.0 library, gtknode.</p>
+                        <h1 id="introduction">Introduction</h1>
+<h2 id="erlang-lfe-gtknode-and-%E2%84%93gtk">Erlang, LFE, gtknode, and &#x2113;GTK</h2>
+<p>&#x2113;GTK is an LFE library for creating stateful desktop applications using the Erlang VM. LFE, a Lisp for the Erlang VM, was created in 2008 by:</p>
+<ul>
+<li>Robert Virding</li>
+</ul>
+<p>&#x2113;GTK wraps the gtknode library, using Erlang <code>gen_server</code> functionality to provide state information to LFE/Erlang processes that are in communication with the GTK C port. This is meant to provide the same level of convenience that opbject-oriented programmers have, without having to pass state to every function, as is sometimes the case in functional programming languages.</p>
+<p>The C port and the larger gtknode library were written by:</p>
+<ul>
+<li>Mats Cronqvist</li>
+</ul>
+<p>&#x2113;GTK was written in LFE by:</p>
+<ul>
+<li>Duncan McGreggor</li>
+</ul>
+<h2 id="gtk">GTK</h2>
+<p>GTK (GIMP Toolkit) is a library for creating graphical user interfaces. It is licensed using the LGPL license, so you can develop open software, free software, or even commercial non-free software using GTK without having to spend anything for licenses or royalties.</p>
+<p>It&apos;s called the GIMP toolkit because it was originally written for developing the GNU Image Manipulation Program (GIMP), but GTK has now been used in a large number of software projects, including the GNU Network Object Model Environment (GNOME) project. GTK is built on top of GDK (GIMP Drawing Kit) which is basically a wrapper around the low-level functions for accessing the underlying windowing functions (Xlib in the case of the X windows system). The primary authors of GTK are:</p>
+<ul>
+<li>Peter Mattis petm@xcf.berkeley.edu</li>
+<li>Spencer Kimball spencer@xcf.berkeley.edu</li>
+<li>Josh MacDonald jmacd@xcf.berkeley.edu </li>
+</ul>
+<p>GTK is currently maintained by:</p>
+<ul>
+<li>Owen Taylor otaylor@redhat.com</li>
+<li>Tim Janik timj@gtk.org </li>
+</ul>
+<p>GTK is essentially an object oriented application programmers interface (API). Although written completely in C, it is implemented using the idea of classes and callback functions (pointers to functions).</p>
+<p>There is also a third component called GLib which contains a few replacements for some standard calls, as well as some additional functions for handling linked lists, etc. The replacement functions are used to increase GTK&apos;s portability, as some of the functions implemented here are not available or are nonstandard on other unixes such as g_strerror(). Some also contain enhancements to the libc versions, such as g_malloc that has enhanced debugging utilities.</p>
+<p>In version 2.0, GLib has picked up the type system which forms the foundation for GTK&apos;s class hierarchy, the signal system which is used throughout GTK, a thread API which abstracts the different native thread APIs of the various platforms and a facility for loading modules.</p>
+<p>As the last component, GTK uses the Pango library for internationalized text output.</p>
+<p>This tutorial describes the LFE interface to GTK+ and is based on the PyGTK 2.0 Tutorial written by John Finlay. That, in turn, was based upon the GTK+ 2.0 Tutorial written by Tony Gale and Ian Main. This tutorial attempts to document as much as possible of PyGTK, but is by no means complete.</p>
+<h2 id="assumptions">Assumptions</h2>
+<p>This tutorial assumes familiarity with a Lisp dialect (preferably a Lisp-2), some understanding of Erlang, basic use of OTP, and how to create and run LFE programs on the Erlang VM. If you are not familiar with LFE, please read the materials provided at <a href="https://lfe.gitbooks.io" target="_blank">https://lfe.gitbooks.io</a> and <a href="http://docs.lfe.io/" target="_blank">http://docs.lfe.io/</a>. This tutorial does not assume an understanding of GTK; if you are learning &#x2113;GTK to learn GTK, please <a href="https://github.com/lfe/lgtk-tutorial/issues/new" target="_blank">create an issue</a> for any difficulties you had with this tutorial. This tutorial does not describe how to compile or install Erlang, LFE, GTK+ or &#x2113;GTK.</p>
+<h2 id="dependencies">Dependencies</h2>
+<p>This tutorial is based on:</p>
+<ul>
+<li>&#x2113;GTK 0.1.0</li>
+<li>gtknode 1.0.3</li>
+<li>GTK+ 2.24 (2.24.27-0ubuntu1)</li>
+<li>LFE 0.10.1</li>
+<li>Erlang 18.1</li>
+</ul>
+<p>The examples were written and tested on an Ubuntu 15.10 system running OpenSTEP and WindowMaker.</p>
+<p>This document is a <em>work in progress</em>. Please look for updates on <a href="https://lfe.gitbooks.io/lfe-gtk2-tutorial" target="_blank">https://lfe.gitbooks.io/lfe-gtk2-tutorial</a>. Please submit any issues on the <a href="https://github.com/lfe/lgtk-tutorial/issues/new" target="_blank">Github project</a>.</p>
 
                     
                     </section>
@@ -499,22 +542,22 @@
         </div>
 
         
+        <a href="../fm/acknowledgments.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Acknowledgments"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./fm/title-page.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Title Page"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="gitbook/app.js"></script>
+<script src="../gitbook/app.js"></script>
 
     
-    <script src="gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":"night","family":"serif","size":1},"ga":{"token":"UA-38274766-4"}};
+    var config = {"fontSettings":{"theme":"night","family":"serif","size":1},"ga":{"token":"UA-38274766-4","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
