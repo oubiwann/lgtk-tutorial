@@ -1,5 +1,5 @@
 {
-    "title": "ℓ GTK Tutorial",
+    "title": "ℓGTK Tutorial",
     "description": "A port of the PyGTK 2.0 tutorial for LFE, built on top of the Erlang GTK 2.0 library, gtknode.",
     "gitbook": "2.x.x",
     "plugins": ["ga"],
