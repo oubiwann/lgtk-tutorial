@@ -29,3 +29,14 @@ publish: build
 
 clean:
 	rm -rf node_modules node*.log
+
+examples:
+	make -C examples
+
+repl:
+	make repl -C examples
+
+repl-debug:
+	make repl-debug -C examples
+
+.PHONY: examples
