@@ -24,12 +24,12 @@ It's called the GIMP toolkit because it was originally written for developing th
 
 * Peter Mattis petm@xcf.berkeley.edu
 * Spencer Kimball spencer@xcf.berkeley.edu
-* Josh MacDonald jmacd@xcf.berkeley.edu 
+* Josh MacDonald jmacd@xcf.berkeley.edu
 
 GTK is currently maintained by:
 
 * Owen Taylor otaylor@redhat.com
-* Tim Janik timj@gtk.org 
+* Tim Janik timj@gtk.org
 
 GTK is essentially an object oriented application programmers interface (API). Although written completely in C, it is implemented using the idea of classes and callback functions (pointers to functions).
 
@@ -54,6 +54,11 @@ This tutorial is based on:
 * GTK+ 2.24 (2.24.27-0ubuntu1)
 * LFE 0.10.1
 * Erlang 18.1
+
+In order to run the example code, the additional software is required:
+
+* GNU make
+* rebar
 
 The examples were written and tested on an Ubuntu 15.10 system running OpenSTEP and WindowMaker.
 
