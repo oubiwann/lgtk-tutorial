@@ -1,0 +1,3 @@
+## Assumptions
+
+This tutorial assumes familiarity with a Lisp dialect (preferably a Lisp-2), some understanding of Erlang, basic use of OTP, and how to create and run LFE programs on the Erlang VM. If you are not familiar with LFE, please read the materials provided at https://lfe.gitbooks.io and http://docs.lfe.io/. This tutorial does not assume an understanding of GTK; if you are learning ℓGTK to learn GTK, please [create an issue](https://github.com/lfe/lgtk-tutorial/issues/new) for any difficulties you had with this tutorial. This tutorial does not describe how to compile or install Erlang, LFE, GTK+ or ℓGTK.
