@@ -10,13 +10,32 @@ $ cd lgtk-tutorial
 $ make examples
 ```
 
-The code for this particular example is the following:
+The LFE code for this particular example is the following:
 
 ```cl
 (defmodule lgtk-example-base
   (export all))
   
 (defun start ..).
+```
+
+The ``base.glade`` XML file which describes the UI to create is this:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="window1">
+    <property name="can_focus">False</property>
+    <property name="default_width">440</property>
+    <property name="default_height">250</property>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+</interface>
+
 ```
 
 You can run the above program using:
