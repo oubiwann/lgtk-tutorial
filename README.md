@@ -1,4 +1,4 @@
-# ℓGTK
+# The LFE GTK Tutorial
 
 
 ## About
